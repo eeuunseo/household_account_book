@@ -3,7 +3,7 @@
 import SearchBar from "@/components/search-bar";
 import Modal from "@/components/modal";
 import { useContext } from "react";
-import { ModalContext } from "@/app/layout";
+import { ModalContext } from "@/components/modalProvider";
 
 export default function Page() {
   const modalContext = useContext(ModalContext);
