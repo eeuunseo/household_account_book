@@ -1,42 +1,92 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(250, 250, 250);
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/Pretendard-Bold.woff") format("woff");
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
+a.title {
+  color: rgb(30,30,30);
   text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.common_button {
+  height: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgb(165,165,165);
+  background-color: rgb(250,250,250);
+  border: rgb(240,240,240) 1px solid;
+  border-radius: 5px;
+}
+
+.common_button:hover {
+  background-color: rgb(240,240,240);
+}
+
+.select_button {
+  width: 50px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: grey;
+  background-color: rgb(200,225,230);
+  border: none;
+  border-radius: 5px;
+}
+
+.select_button:hover {
+  background-color: rgb(195,220,225);
+}
+
+.common_selectbox {
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: grey;
+  border: rgb(240,240,240) 1px solid;
+  border-radius: 5px;
+}
+
+.fixed_button, .variation_button {
+  height: 25px;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(30,30,30);
+  border: none;
+  border-radius: 5px;
+}
+
+.fixed_button {
+  background-color: rgb(240,240,240)
+}
+
+.variation_button {
+  background-color: rgb(245,225,225);
+}
+
+.table_container > tbody {
+  color: black;
 }

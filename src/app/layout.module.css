@@ -1,0 +1,44 @@
+.container {
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container > header {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > header > a:first-child {
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.container > header > span {
+    height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.container > header > a > button {
+    width: 120px;
+}
+
+.container > main {
+    padding-top: 25px;
+}
+  
+.container > footer {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 15px;
+    color: gray;
+    font-size: 12px;
+}
+  

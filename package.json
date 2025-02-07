@@ -9,17 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
+    "@prisma/client": "^6.2.1",
+    "date-fns": "^4.1.0",
+    "next": "15.1.4",
     "react": "^19.0.0",
+    "react-calendar": "^5.1.0",
+    "react-datepicker": "^7.6.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.4"
+    "tui-date-picker": "^4.3.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
+    "@types/react-datepicker": "^6.2.0",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
-    "@eslint/eslintrc": "^3"
+    "prisma": "^6.2.1",
+    "typescript": "^5"
   }
 }

@@ -1,0 +1,54 @@
+.container {
+    padding-top: 5px;
+}
+
+.table_container > table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse:collapse;
+}
+
+.table_container table thead tr td, .table_container table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid rgb(240,240,240)
+}
+
+.table_container table tbody tr:not(:last-child) td:not(:last-child) {
+    border-right: 1px solid rgb(240,240,240)
+}
+
+.table_container > table > thead > tr:first-child {
+    color: rgb(165,165,165);
+    font-size: 13px;
+    text-align: center;
+}
+
+.table_container > table > tbody {
+    color: rgb(30,30,30);
+    font-size: 13px;
+}
+
+.table_container > table > tbody > tr > td:nth-child(3), .table_container > table > tbody > tr > td:last-child {
+    text-align: center;
+}
+
+.table_container > table > tbody > tr > td:first-child {
+    padding-left: 7px;
+    text-align: left;
+}
+
+.table_container > table > tbody > tr > td:nth-child(2) {
+    padding-right: 7px;
+    text-align: right;
+}
+
+.table_container table tr {
+    height: 28px;
+}
+
+.table_container table td {
+    width: 25%;
+}
+
+.button_container button {
+    width: 100%;
+}
